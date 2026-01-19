@@ -78,7 +78,7 @@ Follow these steps to run the full ecosystem (Frontend + Backend Bridge).
 
 2. Clone & Install
 ```
-git clone https://github.com/yourusername/kaspastream.git
+git clone https://github.com/Ashish-Patnaik/KaspaStream.git
 cd kaspastream
 ```
 ### Install Frontend Dependencies
