@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@800;900&display=swap");
+
+@import "tailwindcss";
+
+@layer base {
+  body {
+    @apply bg-[#fdfdfd] text-slate-900 font-sans antialiased;
+    font-family: 'Space Grotesk', sans-serif;
+    /* Fun dot pattern background */
+    background-image: radial-gradient(#cbd5e1 2px, transparent 2px);
+    background-size: 24px 24px;
+  }
+
+  /* Headings use a bolder font for impact */
+  h1, h2, h3, .display-font {
+    font-family: 'Outfit', sans-serif;
+  }
+}
+
+@layer components {
+  /* The Ultimate Neo Box */
+  .neo-box {
+    @apply bg-white border-2 border-black transition-all duration-200;
+    box-shadow: 6px 6px 0px 0px rgba(0,0,0,1);
+  }
+
+  .neo-box-hover:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 8px 8px 0px 0px rgba(0,0,0,1);
+  }
+
+  /* Wiggle Animation for Hover */
+  @keyframes wiggle {
+    0%, 100% { transform: rotate(0deg); }
+    25% { transform: rotate(-3deg); }
+    75% { transform: rotate(3deg); }
+  }
+  .animate-wiggle-hover:hover {
+    animation: wiggle 0.3s ease-in-out infinite;
+  }
+
+  /* Primary Button (Lime) */
+  .btn-primary {
+    @apply bg-[#bef264] border-2 border-black text-black font-bold shadow-[4px_4px_0px_0px_#000] active:shadow-none active:translate-y-1 active:translate-x-1 transition-all transform active:scale-95;
+  }
+  
+  .btn-primary:hover {
+    @apply bg-[#a3e635] -translate-y-0.5 -translate-x-0.5;
+    box-shadow: 5px 5px 0px 0px #000;
+  }
+
+  /* Secondary Button (Cyan) */
+  .btn-secondary {
+    @apply bg-[#22d3ee] border-2 border-black text-black font-bold shadow-[4px_4px_0px_0px_#000] active:shadow-none active:translate-y-1 active:translate-x-1 transition-all;
+  }
+  
+  .btn-secondary:hover {
+    @apply bg-[#06b6d4] -translate-y-0.5 -translate-x-0.5;
+    box-shadow: 5px 5px 0px 0px #000;
+  }
+
+  /* Tertiary Button (Pink) */
+  .btn-tertiary {
+    @apply bg-[#f472b6] border-2 border-black text-black font-bold shadow-[4px_4px_0px_0px_#000] active:shadow-none active:translate-y-1 active:translate-x-1 transition-all;
+  }
+
+  .btn-tertiary:hover {
+    @apply bg-[#db2777] text-white -translate-y-0.5 -translate-x-0.5;
+    box-shadow: 5px 5px 0px 0px #000;
+  }
+
+  /* Outline Button */
+  .btn-ghost {
+    @apply border-2 border-black text-black font-bold hover:bg-yellow-300 hover:-translate-y-0.5 hover:shadow-[4px_4px_0px_0px_#000] transition-all;
+  }
+
+  /* Inputs */
+  .neo-input {
+    @apply bg-white border-2 border-black shadow-[3px_3px_0px_0px_#000] focus:outline-none focus:ring-4 focus:ring-lime-300 transition-all placeholder:text-slate-400;
+  }
+
+  /* Custom Scrollbar */
+  ::-webkit-scrollbar {
+    width: 12px;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-white border-l-2 border-r-2 border-black;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-black border-4 border-white rounded-none hover:bg-[#bef264];
+  }
+}
+
+@layer utilities {
+  .text-shadow {
+    text-shadow: 2px 2px 0px rgba(0,0,0,1);
+  }
+  
+  .bg-grid-pattern {
+    background-size: 40px 40px;
+    background-image:
+      linear-gradient(to right, rgba(0,0,0,0.05) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(0,0,0,0.05) 1px, transparent 1px);
+  }
+
+  /* Animations */
+  .animate-marquee {
+    animation: marquee 25s linear infinite;
+  }
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+  .animate-float-delayed {
+    animation: float 6s ease-in-out 3s infinite;
+  }
+  .animate-spin-slow {
+    animation: spin 12s linear infinite;
+  }
+
+  @keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+  @keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0px); }
+  }
+}
