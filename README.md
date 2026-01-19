@@ -20,6 +20,13 @@ Instead of posting tasks manually or negotiating prices back and forth, KaspaStr
 [Watch the demo on YouTube](https://youtu.be/Oo8ETimud20)
 
 
+## 🌐Live Demo
+[Checkout the live demo 👉](https://kaspa-stream-mizy.vercel.app/)
+
+> ⚠️ **Note:** The loading time and response time will be slow because the application is hosted on a free tier.
+
+
+
 ## 🚀 What Problem Does KaspaStream Solve?
 Traditional gig platforms make you wait days for payouts. Crypto platforms on Bitcoin or Ethereum are too slow or expensive for small tasks.
 
