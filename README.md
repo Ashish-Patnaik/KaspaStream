@@ -137,9 +137,16 @@ Open your browser to http://localhost:5173
 - Recurring Streams: Support for "subscription-based" tasks using Kaspa's high throughput.
 
 
-### Contact
+### 🤖AI Usage
+KaspaStream was built with a human-first approach.
+
+The core idea, system architecture, backend logic, and real-time flow were designed and implemented by me.
+AI tools were used selectively to fix minor bugs and design refinements.
+
+### 📇Contact
 1. Email: ashishpatnaik2806@gmail.com
 2. X account: https://x.com/ashdebugs
+
 
 
 <div align="center">
