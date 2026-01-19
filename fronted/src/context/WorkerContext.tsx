@@ -96,7 +96,7 @@ export const WorkerProvider: React.FC<{ children: ReactNode }> = ({
   useEffect(() => {
     const fetchTelegramTasks = async () => {
       try {
-        const res = await fetch('http://localhost:3001/tasks');
+        const res = await fetch(`${import.meta.env.VITE_BACKEND_URL}/tasks`);
         const data = await res.json();
         
         if (Array.isArray(data) && data.length > 0) {
@@ -303,4 +303,5 @@ export const useWorker = (): WorkerContextType => {
     throw new Error("useWorker must be used within a WorkerProvider");
   }
   return context;
+
 };
