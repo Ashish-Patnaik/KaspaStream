@@ -16,7 +16,7 @@ This project was built as part of a hackathon, focusing on speed, simplicity, an
 <img width="1355" height="603" alt="image" src="https://github.com/user-attachments/assets/aea113c4-633d-4e05-bef6-e42b72de3a3c" />
 
 
-## Demo Video
+## 🎬Demo Video
 
 [Watch the demo on YouTube](https://youtu.be/Oo8ETimud20)
 
