@@ -8,7 +8,6 @@ KaspaStream is a real-time micro-task marketplace that lets anyone create small 
 
 Instead of posting tasks manually or negotiating prices back and forth, KaspaStream allows users to describe a task in natural language, automatically generate a payment address, and publish it to a live task feed where workers can pick it up immediately.
 
-This project was built as part of a hackathon, focusing on speed, simplicity, and real-world usability.
 
 <img width="1324" height="596" alt="image" src="https://github.com/user-attachments/assets/ce5492a3-78ba-427d-baa0-b0b573edbce6" />
 
@@ -75,7 +74,7 @@ Follow these steps to run the full ecosystem (Frontend + Backend Bridge).
 
 - A Telegram Bot Token (from @BotFather)
 
-- An OpenRouter/Gemini API Key
+- An OpenRouter API Key
 
 2. Clone & Install
 ```
@@ -124,13 +123,23 @@ Open your browser to http://localhost:5173
 
 
 ## 🔮 Future Roadmap
-Mainnet Integration: Switch from simulated/testnet payments to full Mainnet wallet connectivity.
+- Mainnet Integration: Switch from simulated/testnet payments to full Mainnet wallet connectivity.
 
-DAO Governance: Allow Rank S workers to vote on platform fees.
+- DAO Governance: Allow Rank S workers to vote on platform fees.
 
-Recurring Streams: Support for "subscription-based" tasks using Kaspa's high throughput.
+- Recurring Streams: Support for "subscription-based" tasks using Kaspa's high throughput.
 
 
+### Contact
+1. Email: ashishpatnaik2806@gmail.com
+2. X account: https://x.com/ashdebugs
+
+
+<div align="center">
 Built with ❤️ for Kaspa by Ashish-Patnaik.
-Contact: ashishpatnaik2806@gmail.com
-X account: https://x.com/ashdebugs
+</div>
+
+<div align="center">
+Don't Forget to ⭐Star⭐ the repo
+</div>
+
