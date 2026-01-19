@@ -21,6 +21,7 @@ Instead of posting tasks manually or negotiating prices back and forth, KaspaStr
 
 
 ## 🌐Live Demo
+
 [Checkout the live demo 👉](https://kaspa-stream-mizy.vercel.app/)
 
 > ⚠️ **Note:** The loading time and response time will be slow because the application is hosted on a free tier.
@@ -28,9 +29,10 @@ Instead of posting tasks manually or negotiating prices back and forth, KaspaStr
 
 
 ## 🚀 What Problem Does KaspaStream Solve?
+
 Traditional gig platforms make you wait days for payouts. Crypto platforms on Bitcoin or Ethereum are too slow or expensive for small tasks.
 
-KaspaStream changes the game. By leveraging Kaspa's BlockDAG architecture, we created a marketplace where payments aren't just fast—they are instant. Workers complete a task, AI verifies it in seconds, and money streams directly to their wallet. No escrow delays. No high gas fees. Just pure speed.
+KaspaStream changes the game. By leveraging Kaspa's BlockDAG architecture, we created a marketplace where payments aren't just fast—they are instant. Workers complete a task, AI verifies it in seconds(proof of work), and money streams directly to their wallet. No escrow delays. No high gas fees. Just pure speed.
 
 - Posting micro-tasks is slow and fragmented
 
@@ -42,13 +44,14 @@ KaspaStream changes the game. By leveraging Kaspa's BlockDAG architecture, we cr
 
 - KaspaStream fixes this by combining:
 
-- Natural language task creation
+1. Natural language task creation
 
-- Real-time task broadcasting
+2. Real-time task broadcasting
 
-- Automated crypto payment generation
+3. Automated crypto payment generation
 
-- A simple, fast user experience
+4. A simple, fast user experience
+
 
 ## ✨ Key Features
 
@@ -130,6 +133,8 @@ Open your browser to http://localhost:5173
 
 
 ## 🔮 Future Roadmap
+- Add a strong Authentication System.
+
 - Mainnet Integration: Switch from simulated/testnet payments to full Mainnet wallet connectivity.
 
 - DAO Governance: Allow Rank S workers to vote on platform fees.
