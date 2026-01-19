@@ -71,14 +71,14 @@ const CreateTask: React.FC = () => {
       </div>
 
       {/* API Key Warning */}
-      {!import.meta.env.VITE_GEMINI_API_KEY && (
+      {!import.meta.env.VITE_OPENROUTER_API_KEY && (
         <div className="bg-yellow-100 border-2 border-black p-4 rounded-lg shadow-[4px_4px_0px_0px_#000]">
           <div className="flex items-start gap-3">
             <AlertCircle className="h-6 w-6 text-yellow-700 flex-shrink-0 mt-0.5" />
             <div>
               <p className="font-bold text-yellow-900">Using Mock AI Data</p>
               <p className="text-sm text-yellow-800 mt-1">
-                Set <code className="bg-yellow-200 px-1 rounded font-mono">VITE_GEMINI_API_KEY</code> to enable real AI.
+                Set <code className="bg-yellow-200 px-1 rounded font-mono">VITE_OPENROUTER_API_KEY</code> to enable real AI.
               </p>
             </div>
           </div>
@@ -198,5 +198,6 @@ const CreateTask: React.FC = () => {
     </div>
   );
 };
+
 
 export default CreateTask;
