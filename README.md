@@ -1,126 +1,136 @@
-⚡ KaspaStream: The Instant Gig Economy
-Microwork at the speed of BlockDAG. Built for Kaspathon: Show Us Your Kode-Fu
+<p align="center">
+  <img src="logo.png" alt="KaspaStream Logo" width="800"/>
+</p>
 
-(Replace this image link with a screenshot of your beautiful dashboard)
+# ⚡KaspaStream: The Instant Gig Economy
 
-🚀 The Elevator Pitch
+KaspaStream is a real-time micro-task marketplace that lets anyone create small jobs instantly and broadcast them to workers — powered by AI parsing and Kaspa-based payments.
+
+Instead of posting tasks manually or negotiating prices back and forth, KaspaStream allows users to describe a task in natural language, automatically generate a payment address, and publish it to a live task feed where workers can pick it up immediately.
+
+This project was built as part of a hackathon, focusing on speed, simplicity, and real-world usability.
+
+<img width="1324" height="596" alt="image" src="https://github.com/user-attachments/assets/ce5492a3-78ba-427d-baa0-b0b573edbce6" />
+
+
+<img width="1355" height="603" alt="image" src="https://github.com/user-attachments/assets/aea113c4-633d-4e05-bef6-e42b72de3a3c" />
+
+
+## Demo Video
+
+[Watch the demo on YouTube](https://youtu.be/Oo8ETimud20)
+
+
+## 🚀 What Problem Does KaspaStream Solve?
 Traditional gig platforms make you wait days for payouts. Crypto platforms on Bitcoin or Ethereum are too slow or expensive for small tasks.
 
 KaspaStream changes the game. By leveraging Kaspa's BlockDAG architecture, we created a marketplace where payments aren't just fast—they are instant. Workers complete a task, AI verifies it in seconds, and money streams directly to their wallet. No escrow delays. No high gas fees. Just pure speed.
 
-🏆 Why This Project? (Hackathon Tracks)
-We are targeting multiple tracks with a unified, polished product:
+- Posting micro-tasks is slow and fragmented
 
-💸 Payments & Commerce: We built a real-world payment loop where transactions drive the action.
+- Payments require manual coordination
 
-⚡ Real-Time Data: We use Kaspa RPC to monitor the DAG in real-time, triggering UI updates milliseconds after a user pays.
+- Workers don’t have visibility into new tasks instantly
 
-🤖 AI Integration: We use Gemini Vision (via OpenRouter) to visually verify proof-of-work, replacing human moderators.
+- Existing platforms are centralized and complex
 
-✨ Key Features
-🧠 AI-Powered Task Creation: Don't fill out forms. Just type "I need 5 people to retweet my post for 10 KAS" and our AI parses the logic instantly.
+- KaspaStream fixes this by combining:
 
-👁️ AI Vision Verification: Workers can upload screenshots as proof. Our AI analyzes the image context to verify the job was actually done.
+- Natural language task creation
 
-📱 Telegram Bridge: Post tasks directly from Telegram! A custom bot syncs seamlessly with the React web dashboard.
+- Real-time task broadcasting
 
-💎 Real-Time Payments: The UI updates the moment a transaction hits the Kaspa mempool. No refreshing required.
+- Automated crypto payment generation
 
-🎮 Worker Gamification: Earn streaks, rank up from Rank D to Rank S, and unlock earning multipliers.
+- A simple, fast user experience
 
-🛠️ The Tech Stack
-Frontend: React, Vite, Tailwind CSS (Glassmorphism UI)
+## ✨ Key Features
 
-Backend/Bridge: Node.js, Express, Telegraf (Telegram Bot API)
+1. 🧠 AI-Powered Task Creation: Don't fill out forms. Just type "I need 5 people to retweet my post for 10 KAS" and our AI parses the logic instantly.
 
-Blockchain: Kaspa WASM SDK, RPC monitoring
+2. 👁️ AI Vision Verification: Workers can upload screenshots as proof. Our AI analyzes the image context to verify the job was actually done.
 
-Artificial Intelligence: OpenRouter API (Google Gemini 2.0 Flash / Vision)
+3. 📱 Telegram Bridge: Post tasks directly from Telegram! A custom bot syncs seamlessly with the React web dashboard.
 
-State Management: React Context API + Custom Hooks
+4. 💎 Real-Time Payments: The UI updates the moment a transaction hits the Kaspa mempool. No refreshing required.
 
-🚀 Installation & Setup
+5. 🎮 Worker Gamification: Earn streaks, rank up from Rank D to Rank S, and unlock earning multipliers.
+
+## 🛠️ The Tech Stack
+- Frontend: React, Vite, Tailwind CSS (Glassmorphism UI)
+
+- Backend/Bridge: Node.js, Express, Telegraf (Telegram Bot API)
+
+- Blockchain: Kaspa WASM SDK, RPC monitoring
+
+- Artificial Intelligence: OpenRouter API (Google Gemini 2.0 Flash / Vision)
+
+- State Management: React Context API + Custom Hooks
+
+## 🚀 Installation & Setup
 Follow these steps to run the full ecosystem (Frontend + Backend Bridge).
 
 1. Prerequisites
-Node.js (v18+)
+- Node.js (v18+)
 
-A Telegram Bot Token (from @BotFather)
+- A Telegram Bot Token (from @BotFather)
 
-An OpenRouter/Gemini API Key
+- An OpenRouter/Gemini API Key
 
 2. Clone & Install
-Bash
-
+```
 git clone https://github.com/yourusername/kaspastream.git
 cd kaspastream
-
-# Install Frontend Dependencies
+```
+### Install Frontend Dependencies
+```
+cd fronted
 npm install
-
-# Install Server Dependencies
+```
+### Install Server Dependencies
+```
 cd server
 npm install
 cd ..
+```
 3. Environment Configuration
-Frontend (.env) Create a .env file in the root directory:
-
-Code snippet
-
+- Frontend (.env) Create a .env file in the Fronted directory:
+```
 VITE_OPENROUTER_API_KEY=your_openrouter_key_here
-Backend (server/.env) Create a .env file in the server/ directory:
-
-Code snippet
-
+```
+- Create a .env file in the server directory:
+Backend (server/.env)
+```
 PORT=3001
 TELEGRAM_BOT_TOKEN=your_telegram_bot_token
+OPENROUTER_API_KEY=your_apikey
+```
 4. Running the App
 You need to run two terminals simultaneously.
 
-Terminal 1 (The Bridge Server):
-
-Bash
-
+- Terminal 1 (The Bridge Server):
+```
 cd server
 node index.js
-You should see: 🚀 Bridge Server running on port 3001 and 🤖 Bot Started
+```
+You should see: 🚀 Bridge Server running on port 3001
 
-Terminal 2 (The Frontend):
-
-Bash
-
+- Terminal 2 (The Frontend):
+```
+cd fronted
 npm run dev
 Open your browser to http://localhost:5173
+```
 
-🎮 How to Demo (The "Wow" Loop)
-If you are judging or testing this project, here is the ideal flow:
 
-Open Telegram: Message your bot with: "I need 5 people to test my website. Paying 50 KAS."
-
-Result: The Bot replies instantly, and a notification pops up on the Web Dashboard: "New task arrived via Telegram!"
-
-Go to Dashboard: Click "Find Work". You will see your new task there.
-
-Start Task: Click the task. If it says "Pending", use the DevTools widget (bottom right) to "Simulate Funding".
-
-Submit Proof:
-
-Write a text note.
-
-Upload an image (this triggers the AI Vision check).
-
-Click Submit.
-
-Get Paid: The system verifies the image content. If valid, you get a green "Payment Received" notification and your balance updates instantly.
-
-🔮 Future Roadmap
+## 🔮 Future Roadmap
 Mainnet Integration: Switch from simulated/testnet payments to full Mainnet wallet connectivity.
 
 DAO Governance: Allow Rank S workers to vote on platform fees.
 
 Recurring Streams: Support for "subscription-based" tasks using Kaspa's high throughput.
 
-👨‍💻 Contributors
-[Your Name] - Full Stack Developer
 
-Built with ❤️ and Caffeine for Kaspathon.
+Built with ❤️ for Kaspa by Ashish-Patnaik.
+Contact: ashishpatnaik2806@gmail.com
+X account: https://x.com/ashdebugs
