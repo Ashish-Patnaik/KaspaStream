@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="logo.png" alt="KaspaStream Logo" width="800"/>
+  <img src="11.png" alt="KaspaStream Logo" width="25%"/>
 </p>
 
 # ⚡KaspaStream: The Instant Gig Economy
