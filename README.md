@@ -22,6 +22,8 @@ Instead of posting tasks manually or negotiating prices back and forth, KaspaStr
 
 ## 🌐Live Demo
 
+### Telegram Bot Username :- @KaspaStream_Bot
+
 [Checkout the live demo](https://kaspa-stream-mizy.vercel.app/)
 
 > ⚠️ **Note:** The loading time and response time will be slow because the application is hosted on a free tier.
