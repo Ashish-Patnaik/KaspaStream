@@ -147,8 +147,10 @@ Open your browser to http://localhost:5173
 ### 🤖AI Usage
 KaspaStream was built with a human-first approach.
 
-The core idea, system architecture, backend logic, and real-time flow were designed and implemented by me.
+The core idea, system architecture, backend logic, and real-time flow were designed and implemented by me with some help of AI.
 AI tools were used selectively to fix minor bugs and some design refinements.
+
+AI is also used to get some design ideas and functionality. 
 
 ### 📇Contact
 1. Email: ashishpatnaik2806@gmail.com
