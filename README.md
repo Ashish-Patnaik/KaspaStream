@@ -28,10 +28,6 @@ Instead of posting tasks manually or negotiating prices back and forth, KaspaStr
 
 > ⚠️ **Note:** The loading time and response time will be slow because the application is hosted on a free tier.
 
-## Kaspa Wallet Address
-
-### Address :- kaspa:qpt7yrjnn5amj5qwyalv7mflqc5pk5n8sf6jdn065yltd4jma5tz5uhwa2fle
-
 
 ## 🚀 What Problem Does KaspaStream Solve?
 
